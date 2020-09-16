@@ -1,2 +1,2 @@
 #!/bin/bash
-"Hello ADESPRES!"
+echo "Hello ADESPRES!"
