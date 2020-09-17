@@ -10,7 +10,7 @@ func main() {
 	for i <= 10 {
 
 		z01.PrintRune(rune(aRune[i]))
-		i = i - 1
+		i = i + 1
 
 	}
 
