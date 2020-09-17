@@ -4,13 +4,13 @@ import "github.com/01-edu/z01"
 
 func main() {
 
-	i := 0
-	var aRune string = "abcdefghijklmnopqrstuvwxyz\n"
+	i := 26
+	var aRune string = "\nabcdefghijklmnopqrstuvwxyz"
 
-	for i <= 26 {
+	for i >= 0 {
 
 		z01.PrintRune(rune(aRune[i]))
-		i = i + 1
+		i = i - 1
 
 	}
 
