@@ -1,6 +1,6 @@
 package piscine
 
-func IsUpper(s string) bool {
+func IsLower(s string) bool {
 
 	runes := []rune(s)
 	for i := 0; i < len(runes); i++ {
