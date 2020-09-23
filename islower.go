@@ -1,15 +1,13 @@
 package piscine
 
 func IsLower(s string) bool {
-
-	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
-
-		if int(runes[i]) >= 97 && int(runes[i]) <= 122 {
+	lettre := []rune(s)
+	x := 0
+	for x <= len(s) && (lettre[x] >= 'a' && lettre[x] <= 'z') {
+		x++
+		if x == len(s) {
 			return true
 		}
-
 	}
-
 	return false
 }
