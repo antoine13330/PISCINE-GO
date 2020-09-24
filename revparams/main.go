@@ -12,7 +12,7 @@ func main() {
 	for i := range arguments {
 		len = i
 	}
-	for i := len; i >= 0; i-- {
+	for i := len; i > 0; i-- {
 		for _, k := range arguments[i] {
 			z01.PrintRune(k)
 		}
