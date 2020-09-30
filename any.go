@@ -1,9 +1,11 @@
 package piscine
 
 func Any(f func(string) bool, a []string) bool {
-	for i, v := range a {
-		a[i] = f(a)
-	}
-	return f(v)
 
+	for _, b := range a {
+		if f(b) {
+			return true
+		}
+	}
+	return false
 }
