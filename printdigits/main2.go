@@ -1,16 +1,18 @@
 package main
 
+//package main
+
 import "github.com/01-edu/z01"
 
 func main() {
 
-	i := 26
-	var aRune string = "\nabcdefghijklmnopqrstuvwxyz"
+	i := 0
+	var aRune string = "0123456789\n"
 
-	for i >= 0 {
+	for i <= 10 {
 
 		z01.PrintRune(rune(aRune[i]))
-		i = i - 1
+		i = i + 1
 
 	}
 

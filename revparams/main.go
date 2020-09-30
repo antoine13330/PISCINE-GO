@@ -12,11 +12,11 @@ func main() {
 	for i := range arguments {
 		len = i
 	}
-	for i := len; i > 0; i-- {
+	for i := 1; i <= len; i++ {
 		for _, k := range arguments[i] {
 			z01.PrintRune(k)
 		}
 		z01.PrintRune(10)
-	}
 
+	}
 }

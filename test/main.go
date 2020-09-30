@@ -1,7 +1,11 @@
 package main
 
-import piscine ".."
+import (
+	"fmt"
+
+	piscine ".."
+)
 
 func main() {
-	piscine.PrintComb()
+	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("Hello how are you?"))
 }
