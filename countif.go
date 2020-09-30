@@ -1,11 +1,18 @@
 package piscine
 
-func CountIf(f func(string) bool, tab []string) int {
-	y := 0
-	for _, v := range tab {
-		if f(v) == true {
-			y++
+func IsSorted(f func(a, b int) int, a []int) bool {
+	first := false
+	second := false
+	for i := 0; i < len(a)-1; i++ {
+		if f(a[i], a[i+1]) > 0 {
+			first = true
+		} else if f(a[i], a[i+1]) < 0 {
+			second = true
 		}
 	}
-	return y
+	if first && second {
+		return false
+	} else {
+		return true
+	}
 }
